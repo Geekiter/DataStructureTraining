@@ -18,3 +18,5 @@ add_executable(SeqStack3.1 SeqList/SeqList.cpp SeqList/SeqList.h SeqStack3.1/Seq
 add_executable(LinkStack3.2 LinkStack3.2/LinkStack.h LinkStack3.2/LinkStack.cpp LinkStack3.2/LinkStackMain.cpp)
 # 测试
 add_executable(test test.cpp)
+# 循环队列
+add_executable(CirQueue3.3 CirQueue3.3/CirQueue.h CirQueue3.3/CirQueue.cpp CirQueue3.3/CirQueueMain.cpp)
