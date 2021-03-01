@@ -18,7 +18,7 @@ void SeqList<T>::push(T _value) {
 }
 
 template<typename T>
-void SeqList<T>::remove_by_index(int _index) {
+void SeqList<T>::removeByIndex(int _index) {
     if (_index < 0 || _index > length - 1) {
         throw "位置出错, 数组不存在该位置";
     }
@@ -29,7 +29,7 @@ void SeqList<T>::remove_by_index(int _index) {
 }
 
 template<typename T>
-int SeqList<T>::find_by_value(T _value) {
+int SeqList<T>::findByValue(T _value) {
     for (int i = 0; i < length; i++) {
         if (arr[i] == _value)
             return i;
@@ -38,14 +38,14 @@ int SeqList<T>::find_by_value(T _value) {
 }
 
 template<typename T>
-T SeqList<T>::find_by_index(int _index) {
+T SeqList<T>::findByIndex(int _index) {
     return arr[_index];
 }
 
 template<typename T>
-void SeqList<T>::remove_by_value(T _value) {
-    int _index = this->find_by_value(_value);
-    this->remove_by_index(_index);
+void SeqList<T>::removeByValue(T _value) {
+    int _index = this->findByValue(_value);
+    this->removeByIndex(_index);
 }
 
 template<typename T>
@@ -63,7 +63,7 @@ void SeqList<T>::removeDuplication() {
     int _index = 0;
     for (int i = 0; i < length; i++) {
         try {
-            tmp_arr.find_by_value(arr[i]);
+            tmp_arr.findByValue(arr[i]);
         } catch (const char *e) {
             tmp_arr.push(arr[i]);
         }
@@ -77,7 +77,7 @@ void SeqList<T>::removeDuplication() {
 template<typename T>
 void SeqList<T>::combine(SeqList<T> _seqList2) {
     for (int i = 0; i < _seqList2.length; i++) {
-        push(_seqList2.find_by_index(i));
+        push(_seqList2.findByIndex(i));
     }
 }
 
@@ -85,7 +85,7 @@ void SeqList<T>::combine(SeqList<T> _seqList2) {
 template<typename T>
 SeqList<T>::SeqList(T _arr[], int _len) {
     if (_len > MAX_LENGTH)
-        throw "长度溢出, 闯入数组大于最大长度" + to_string(MAX_LENGTH);
+        throw "长度溢出, 传入数组大于最大长度" + to_string(MAX_LENGTH);
     for (int i = 0; i < _len; i++) {
         push(_arr[i]);
     }

@@ -10,4 +10,4 @@ add_executable(SeqList SeqList/SeqList.cpp SeqList/SeqList.h SeqList/SeqListMain
 add_executable(SeqList2.2 SeqList/SeqList.cpp SeqList/SeqList.h SeqList2.2/SeqList2.2.cpp)
 add_executable(SeqList2.3 SeqList/SeqList.cpp SeqList/SeqList.h SeqList2.3/SeqList2.3.cpp)
 add_executable(SingleLinkedList2.4 SingleLinkedList2.4/SingleLinkedList2.4.h SingleLinkedList2.4/SingleLinkedList2.4.cpp SingleLinkedList2.4/SingleLinkedListMain.cpp)
-add_executable(SeqStack3.1 SeqStack3.1/SeqStack.h SeqStack3.1/SeqStack.cpp SeqStack3.1/SeqStackMain.cpp)
+add_executable(SeqStack3.1 SeqList/SeqList.cpp SeqList/SeqList.h SeqStack3.1/SeqStack.h SeqStack3.1/SeqStack.cpp SeqStack3.1/SeqStackMain.cpp)

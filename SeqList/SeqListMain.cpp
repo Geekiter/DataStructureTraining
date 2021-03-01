@@ -12,15 +12,15 @@ int main() {
         int i10 = i * 10;
         seq_list.push(i10);
         assert(seq_list.length == i + 1);
-        assert(seq_list.find_by_index(i) == i10);
-        assert(seq_list.find_by_value(i10) == i);
+        assert(seq_list.findByIndex(i) == i10);
+        assert(seq_list.findByValue(i10) == i);
     }
     seq_list.loop();
     int index = 0;
-    int value = seq_list.find_by_index(index);
-    assert(seq_list.find_by_value(value) == index);
+    int value = seq_list.findByIndex(index);
+    assert(seq_list.findByValue(value) == index);
     int pre_len = seq_list.length;
-    seq_list.remove_by_value(value);
+    seq_list.removeByValue(value);
     assert(seq_list.length == pre_len - 1);
     return 0;
 }

@@ -28,14 +28,14 @@ public:
      * @param _index  位置
      * @return 该位置的值
      */
-    T find_by_index(int _index);
+    T findByIndex(int _index);
 
     /**
      * 根据值找第一次出现的位置
      * @param _value 值
      * @return 该值第一次出现的位置
      */
-    int find_by_value(T _value);
+    int findByValue(T _value);
 
     /**
      * 结尾附加值
@@ -47,13 +47,13 @@ public:
      * 根据位置删除值
      * @param _index 位置
      */
-    void remove_by_index(int _index);
+    void removeByIndex(int _index);
 
     /**
      * 删除第一次出现该值的值
      * @param _value 值
      */
-    void remove_by_value(T _value);
+    void removeByValue(T _value);
 
     /**
      * 遍历顺序表, 并打印
