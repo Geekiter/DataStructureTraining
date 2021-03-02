@@ -25,7 +25,7 @@ void LinkStack<T>::push(T _value) {
 
 template<typename T>
 void LinkStack<T>::pop() {
-    arr.erase(arr.begin());
+    arr.erase(arr.end());
 }
 
 template<typename T>

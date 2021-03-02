@@ -16,7 +16,7 @@ void SeqStack<T>::push(T _value) {
 
 template<typename T>
 void SeqStack<T>::pop() {
-    stack.removeByIndex(0);
+    stack.removeByIndex(stack.length - 1);
 }
 
 template<typename T>
