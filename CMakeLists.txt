@@ -20,3 +20,9 @@ add_executable(LinkStack3.2 LinkStack3.2/LinkStack.h LinkStack3.2/LinkStack.cpp 
 add_executable(test test.cpp)
 # 循环队列
 add_executable(CirQueue3.3 CirQueue3.3/CirQueue.h CirQueue3.3/CirQueue.cpp CirQueue3.3/CirQueueMain.cpp)
+# 双端队列
+add_executable(Deque3.4 CirQueue3.3/CirQueue.h CirQueue3.3/CirQueue.cpp Deque3.4/DequeMain.cpp)
+# 链队列
+add_executable(LinkQueue3.5 LinkQueue3.5/LinkQueue.h LinkQueue3.5/LinkQueue.cpp LinkQueue3.5/LinkQueueMain.cpp)
+# Hanio汉诺塔问题
+add_executable(Hanoi3.6 Hanoi3.6/Hanoi.cpp)
