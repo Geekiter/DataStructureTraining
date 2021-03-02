@@ -32,6 +32,11 @@ public:
     void pop();
 
     /**
+     * 出队尾
+     */
+    void popEnd();
+
+    /**
      * 取队头
      * @return 对头的值
      */

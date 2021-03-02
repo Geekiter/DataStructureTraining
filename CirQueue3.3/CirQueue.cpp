@@ -23,7 +23,6 @@ void CirQueue<T>::pop() {
         begin = (begin + 1) % MAX_SIZE;
         count--;
     } else {
-        std::cout << begin << " " << end << std::endl;
         throw "Pop Exception: The queue is empty.";
 
     }
@@ -43,5 +42,16 @@ T CirQueue<T>::getTop() {
 template<typename T>
 bool CirQueue<T>::isEmpty() {
     return count == 0;
+}
+
+template<typename T>
+void CirQueue<T>::popEnd() {
+    if (!isEmpty()) {
+        end = (end + 1) % MAX_SIZE;
+        count--;
+    } else {
+        throw "Pop Exception: The queue is empty.";
+
+    }
 }
 
