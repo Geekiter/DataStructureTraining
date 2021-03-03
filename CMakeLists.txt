@@ -26,3 +26,5 @@ add_executable(Deque3.4 CirQueue3.3/CirQueue.h CirQueue3.3/CirQueue.cpp Deque3.4
 add_executable(LinkQueue3.5 LinkQueue3.5/LinkQueue.h LinkQueue3.5/LinkQueue.cpp LinkQueue3.5/LinkQueueMain.cpp)
 # Hanio汉诺塔问题
 add_executable(Hanoi3.6 Hanoi3.6/Hanoi.cpp)
+# 顺序表进制转换
+add_executable(SysConvert3.7 SysConvert3.7/SysConvert.cpp)
