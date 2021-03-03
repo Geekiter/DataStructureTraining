@@ -26,6 +26,5 @@ bool SeqStack<T>::isEmpty() {
 
 template<typename T>
 T SeqStack<T>::getTop() {
-    return stack.findByIndex(0);
+    return stack.findByIndex(stack.length - 1);
 }
-

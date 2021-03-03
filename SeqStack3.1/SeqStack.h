@@ -28,11 +28,13 @@ public:
      * 出栈
      */
     void pop();
+
     /**
      * 取栈顶
      * @return 栈顶的值
      */
     T getTop();
+
     /**
      * 判断是否为空
      * @return 是否为空, 空: true, 不为空: false
