@@ -30,3 +30,7 @@ add_executable(Hanoi3.6 Hanoi3.6/Hanoi.cpp)
 add_executable(SysConvert3.7 SysConvert3.7/SysConvert.cpp)
 # 迷宫问题
 add_executable(Maze3.8 Maze3.8/Maze.cpp)
+# 迷宫问题的广度优先解决办法
+add_executable(Maze3.8BFS Maze3.8BFS/Maze.cpp)
+# 皇后问题
+add_executable(Queen Queen3.9/Queen.cpp)

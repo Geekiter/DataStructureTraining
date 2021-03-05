@@ -1,4 +1,3 @@
-
 #include "../SeqStack3.1/SeqStack.cpp"
 #include <vector>
 
